@@ -1,0 +1,31 @@
+{
+  "overall": {
+    "success_rate": 0.4,
+    "action_f1": 0.5166666661416666,
+    "avg_len_error": 0.5,
+    "count": 20
+  },
+  "seen": {
+    "success_rate": 0.5,
+    "action_f1": 0.5833333327559523,
+    "avg_len_error": 0.42857142857142855,
+    "count": 14
+  },
+  "unseen": {
+    "success_rate": 0.16666666666666666,
+    "action_f1": 0.3611111107083333,
+    "avg_len_error": 0.6666666666666666,
+    "count": 6
+  },
+  "generalization_gap_action_f1": 0.22222222204761904,
+  "meta": {
+    "csv": "sample_wab.csv",
+    "agent": "lm",
+    "lm_name": "T5TokenizerFast",
+    "lang": "en",
+    "unseen_ratio": 0.5,
+    "fewshot_k": 6,
+    "seed": 7,
+    "len_threshold": 3
+  }
+}

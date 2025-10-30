@@ -1,0 +1,21 @@
+idx,instruction,gold_plan,pred_plan,action_f1,avg_len_error,success,horizon,composition_key,split
+0,Make coffee using the moka pot on the stove.,"turn_on(stove); place_on(moka_pot,stove)","turn_on(stove); place_on(moka_pot,stove)",0.9999999989999999,0,1,short,moka_pot|stove|none,seen
+1,Put the black bowl into the bottom drawer of the cabinet and close the drawer.,"open(bottom_drawer); put_in(black_bowl,bottom_drawer); close(bottom_drawer)","open(bottom_drawer); put_in(black_bowl,bottom_drawer); close(bottom_drawer)",0.9999999991666666,0,1,long,object|bottom_drawer|none,seen
+2,Put the mug inside the microwave and close the door.,"open(microwave); put_in(mug,microwave); close(microwave)","open(microwave); put_in(mug,microwave); close(microwave)",0.9999999991666666,0,1,long,mug|target|none,seen
+3,Prepare hot coffee by using the moka pots available in the kitchen.,"place_on(moka_pot,stove); place_on(moka_pot,stove)",turn_on(moka_pot); place_on(moka_pot); turn_on(stove),0.0,1,0,short,moka_pot|target|none,unseen
+4,Put the alphabet soup and cream cheese box into the basket in the living room.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket); put_in(item,living room); === end examples",0.6666666659999999,2,0,short,cream_cheese|basket|none,unseen
+5,Put the alphabet soup and tomato sauce into the basket.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,tomato sauce)",0.49999999924999994,0,0,short,object|basket|none,seen
+6,Put the cream cheese and butter into the basket in the living room.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket) === end examples",0.49999999924999994,0,0,short,cream_cheese|basket|none,unseen
+7,Place the white mug on the left plate and the yellow-and-white mug on the right plate in the living room.,"place_on(white_mug,plate); place_on(yellow_white_mug,plate)","put_in(white mug,left plate); put_in(yellow-and-white mug,right plate); === end examples",0.0,1,0,short,white_mug|plate|none,unseen
+8,Place the white mug on the plate and position the chocolate pudding to the right of it.,"place_on(white_mug,plate); place_on(yellow_white_mug,plate)","place_on(white mug,plate); put_in(pizza pudding,white mug)",0.0,0,0,short,white_mug|plate|right_of_it.,unseen
+9,Put the book into the back section of the caddy.,"pick(book); put_in(book,caddy_back)",put_in(book); open(caddy); put_in(book); close(caddy),0.0,2,0,short,book|caddy|none,seen
+10,Put the alphabet soup can into the shopping basket.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket); put_in(item,basket); put_in(item,basket) === end",0.6666666659999999,2,0,short,object|basket|none,seen
+11,Put the BBQ sauce in the basket.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket)",0.9999999989999999,0,1,short,object|basket|none,seen
+12,Put the butter in the basket.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket)",0.9999999989999999,0,1,short,object|basket|none,seen
+13,Put the chocolate pudding into the basket.,"put_in(item,basket); put_in(item,basket)",put_in(pudding); put_in(basket); put_in(pudding),0.0,1,0,short,object|basket|none,seen
+14,Put the cream cheese in the basket.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket)",0.9999999989999999,0,1,short,cream_cheese|basket|none,unseen
+15,Put the ketchup bottle into the basket.,"put_in(item,basket); put_in(item,basket)",put_in(ketchup bottle); put_in(basket),0.0,0,0,short,object|basket|none,seen
+16,Put the milk carton in the shopping basket.,"put_in(item,basket); put_in(item,basket)",put_in(milk carton); put_in(basket); put_in(milk carton),0.0,1,0,short,object|basket|none,seen
+17,Put the orange juice in the basket.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket)",0.9999999989999999,0,1,short,object|basket|none,seen
+18,Put the salad dressing in the basket.,"put_in(item,basket); put_in(item,basket)",put_in(salad dressing); put_in(basket),0.0,0,0,short,object|basket|none,seen
+19,Put the tomato sauce in the basket.,"put_in(item,basket); put_in(item,basket)","put_in(item,basket); put_in(item,basket)",0.9999999989999999,0,1,short,object|basket|none,seen
