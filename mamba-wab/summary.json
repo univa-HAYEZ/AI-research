@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "csv": "/workspace/mamba_wab_pipeline/libero_instructions_compressed.csv",
+    "model": "mistralai/Mamba-Codestral-7B-v0.1",
+    "device": "cuda",
+    "lang": "en",
+    "history_k": 3,
+    "max_steps": 8,
+    "batch_size": 16,
+    "max_new_tokens": 48,
+    "unseen_ratio": 0.3,
+    "seed": 42,
+    "seconds_total": 1338.8651070594788
+  },
+  "overall": {
+    "count": 79,
+    "avg_traj_len": 7.7974683544303796,
+    "stop_rate": 0.06329113924050633,
+    "invalid_rate": 0.01740506329113924,
+    "repeat_ratio": 0.045207956600361664,
+    "loop_rate": 0.22784810126582278,
+    "avg_seconds": 16.947322462178484
+  },
+  "seen": {
+    "count": 55,
+    "avg_traj_len": 7.709090909090909,
+    "stop_rate": 0.09090909090909091,
+    "invalid_rate": 0.013636363636363636,
+    "repeat_ratio": 0.04155844155844156,
+    "loop_rate": 0.23636363636363636,
+    "avg_seconds": 17.09284497607838
+  },
+  "unseen": {
+    "count": 24,
+    "avg_traj_len": 8.0,
+    "stop_rate": 0.0,
+    "invalid_rate": 0.026041666666666668,
+    "repeat_ratio": 0.05357142857142857,
+    "loop_rate": 0.20833333333333334,
+    "avg_seconds": 16.613833367824554
+  }
+}
